@@ -1,33 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
-body{
-    margin: 0;
-    padding: 0px;
-}
+    body{
+        margin: 0;
+        padding: 0px;
+    }
 
-#principal{
-    width: 100%;
-    height: 100px;
-    background-color: #303030;
-    display: flex;
-    justify-content:space-between ;
-}
+    /*Menu de Navegação Principal*/
+    #principal{
+        width: 100%;
+        height: 100px;
+        background-color: #303030;
+        display: flex;
+        justify-content:space-between ;/*Trabalha o espaço entre os componentes do container*/
+        align-items: center;
+        border-bottom: 1px solid #bababa;
+    }
 
-#menu{
-    display: flex;
-    width: 50%;
-    justify-content: space-around;
-    align-items: center;
-}
+        #menu{
+            display: flex;
+            width: 45%;
+            justify-content: space-around;
+            align-items: center; /*Trabalha os alinhamentos verticais dos items*/
+            margin-left: 5%;
+        }
 
-#principal div a{
-    font-family: 'Inter';
-    font-size: 25px;
-    font-weight: 600px;
-    color: white;
-    text-decoration: none;
-}
+        #principal div a{
+            font-family: 'Inter';
+            font-size: 25px;
+            font-weight: 600px;
+            color: white;
+            text-decoration: none;
+        }
 
-#principal button{
-    margin-right: 5%;
-}
+            #principal div a:hover{ /*hover - seletor de pseudoclasse*/
+                color: #CCCCCC;
+            }
+
+        #principal button{
+            margin-right: 5%;
+            background-color: #0C70F2;
+            border: 0;
+            height: 40px;
+            width: 80px;
+            font-family: 'Inter';
+            font-weight: 600;
+            font-size: 20px;
+            color: #FFFFFF;
+            box-shadow: 3px 2px 4px rgba(12, 112, 242, 0.25); 
+            /* box-shadow - A primeira configuração é sombrear em relação à horizontal
+            depois o sombreamento na vertical
+            o terceiro ponto é tipo um "assado" na sombra (uma fumaça dependendo de quantos pixels você coloca)
+            por fim a definição da cor do sombreamento 
+            o rgba (a de alfa) ele define a transparência da cor*/
+
+            cursor: pointer;
+        }
