@@ -1,15 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
+:root{
+    --azul-DNC: #0C70F2;
+    --preto-DNC: #303030;
+    --cinza-hover: #c9c9c9;
+    --fonte-padrao: 'inter';
+}
+
     body{
         margin: 0;
         padding: 0px;
+        background: linear-gradient(180deg, rgba(12, 112, 242, 0.5) 19.91%, rgba(12, 112, 242, 0) 24.84%), #303030;
+        /*Função degradê*/
+        background-repeat: no-repeat;
     }
 
     /*Menu de Navegação Principal*/
     #principal{
         width: 100%;
         height: 100px;
-        background-color: #303030;
+        background-color: var(--preto-DNC);
         display: flex;
         justify-content:space-between ;/*Trabalha o espaço entre os componentes do container*/
         align-items: center;
@@ -25,7 +35,7 @@
         }
 
         #principal div a{
-            font-family: 'Inter';
+            font-family: var(--fonte-padrao);
             font-size: 25px;
             font-weight: 600px;
             color: white;
@@ -33,16 +43,16 @@
         }
 
             #principal div a:hover{ /*hover - seletor de pseudoclasse*/
-                color: #CCCCCC;
+                color: var(--cinza-hover);
             }
 
         #principal button{
             margin-right: 5%;
-            background-color: #0C70F2;
+            background-color: var(--azul-DNC);
             border: 0;
             height: 40px;
             width: 80px;
-            font-family: 'Inter';
+            font-family: var(--fonte-padrao);
             font-weight: 600;
             font-size: 20px;
             color: #FFFFFF;
@@ -55,3 +65,41 @@
 
             cursor: pointer;
         }
+
+    /*Seção principal do site*/
+
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+        header{
+            color: white;
+            font-family: var(--fonte-padrao);
+
+        }
+
+        header h1{
+            font-size: 80px;
+            font-weight: 800;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header h2{
+            text-align: center;
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 100px;
+        }
+
+        header .marcadorTexto{
+            background-color: black;
+            font-weight: bold;
+            padding: 5px;
+        }
+
